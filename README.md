@@ -1,12 +1,8 @@
-### coding-interview
+# coding-interview
 
-***
+### Assignment Requirements:
 
-##### Assignment Requirements:
-
-***
-
-Implement a simplified version of the AAVE dashboard with the following specifications:
+#### Implement a simplified version of the AAVE dashboard with the following specifications:
 
 1. Implement wallet connection using wallet-kit
 2. Enable manual wallet address input to view corresponding address information (refer to AAVE's Read-only mode)
