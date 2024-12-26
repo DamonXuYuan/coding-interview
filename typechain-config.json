@@ -1,0 +1,5 @@
+{
+  "target": "ethers-v5",
+  "out": "src/types/contracts",
+  "inputs": "./src/abis"
+}

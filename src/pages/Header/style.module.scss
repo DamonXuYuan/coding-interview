@@ -1,0 +1,81 @@
+.header {
+  width: 100%;
+  height: 56px;
+  padding: 8px 20px;
+  background-color: #303549;
+  color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .connectWallet {
+    display: flex;
+    .button {
+      height: 40px;
+      font-weight: 600;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 20px;
+      border-radius: 20px;
+      background-color: blue;
+      color: #fff;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    .mask {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modalContent {
+      width: 30%;
+      height: max-content;
+      margin: auto;
+      position: fixed;
+      top: 30%;
+      right: 0;
+      left: 0;
+      border-radius: 20px;
+      padding: 20px;
+      background-color: #fff;
+      color: #303549;
+      .tips {
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      .inputs {
+        width: 100%;
+        height: 40px;
+        padding: 4px 12px;
+        margin-bottom: 5px;
+        border-radius: 6px;
+        border: 1px solid rgb(234, 235, 239);
+        outline: none;
+        box-sizing: border-box;
+      }
+      .submit {
+        width: 100%;
+        height: 46px;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-weight: 500;
+        background-color: rgb(247, 247, 249);
+        border: 1px solid rgb(234, 235, 239);
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

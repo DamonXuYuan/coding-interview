@@ -1,7 +1,11 @@
 import { create } from "zustand";
 
-type State = {};
+type State = {
+  inputAddress: string;
+};
 
-const globalStore = create<State>(() => ({}));
+const globalStore = create<State>(() => ({
+  inputAddress: "",
+}));
 
 export default globalStore;

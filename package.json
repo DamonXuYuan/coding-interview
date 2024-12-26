@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@rainbow-me/rainbowkit": "^0.12.2",
+    "@aave/periphery-v3": "^2.5.2",
+    "@rainbow-me/rainbowkit": "^2.2.1",
+    "@tanstack/react-query": "^5.62.10",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -18,16 +20,16 @@
     "css-modules-typescript-loader": "^4.0.1",
     "dayjs": "^1.11.7",
     "ethers": "^5",
-    "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-image-webp": "^0.8.0",
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
-    "sass": "^1.59.3",
+    "sass": "^1.83.0",
     "sass-resources-loader": "^2.2.5",
     "typescript": "^5.0.2",
-    "wagmi": "^0.12.3",
+    "viem": "^2.21.57",
+    "wagmi": "^2.14.6",
     "web-vitals": "^2.1.4",
     "zustand": "^4.3.6"
   },
@@ -37,7 +39,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:ts": "tsc --noEmit && eslint src --ext .ts,.tsx ",
-    "lint:scss": "stylelint src/**/*.scss --fix"
+    "lint:scss": "stylelint src/**/*.scss --fix",
+    "typechain": "typechain --target ethers-v5 --out-dir src/types/contracts './src/abis/*.json'",
+    "postinstall": "yarn typechain"
   },
   "eslintConfig": {
     "extends": [
@@ -56,5 +60,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@typechain/ethers-v5": "^11.1.2",
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^22.10.2",
+    "typechain": "^8.3.2"
   }
 }
